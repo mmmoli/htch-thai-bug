@@ -1,4 +1,5 @@
 import { Auth } from "./Auth";
+import { ProjectList } from "./ProjectList";
 import { Thing } from "./Thing";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Auth />
       <Thing />
+      <ProjectList />
     </>
   );
 }
