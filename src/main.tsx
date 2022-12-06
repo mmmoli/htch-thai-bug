@@ -4,9 +4,12 @@ import App from "./App";
 
 import { NhostClient, NhostReactProvider } from "@nhost/react";
 
+const subdomain = "ilmlkvvcvsjibqpthmkm";
+const region = "ap-southeast-1";
+
 const nhost = new NhostClient({
-  subdomain: "ilmlkvvcvsjibqpthmkm",
-  region: "ap-southeast-1",
+  backendUrl: `https://ilmlkvvcvsjibqpthmkm.nhost.run`,
+  autoRefreshToken: true,
 });
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(

@@ -3,8 +3,9 @@ import {
   useAuthenticationStatus,
   useSignOut,
 } from "@nhost/react";
+import { memo } from "react";
 
-export const Auth = () => {
+export const Auth = memo(() => {
   const { isLoading, signInEmailPassword, user } = useSignInEmailPassword();
   const { isAuthenticated } = useAuthenticationStatus();
   const { signOut } = useSignOut();
@@ -29,4 +30,4 @@ export const Auth = () => {
       </li>
     </ul>
   );
-};
+});
